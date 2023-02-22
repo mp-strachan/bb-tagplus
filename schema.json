@@ -1,0 +1,89 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "bb-tagplus",
+    "friendlyName": "Tag+",
+    "description": "A tag type input with autocomplete",
+    "icon": "PageTag",
+    "settings": [
+      {
+        "type": "field/string",
+        "label": "Tags Field",
+        "key": "tagsField",
+        "required": true
+      },
+      {
+        "type": "text",
+        "label": "Label",
+        "key": "labelText"
+      },
+      {
+        "type": "boolean",
+        "key": "showLabel",
+        "label": "Show Label Internally",
+        "defaultValue": false
+      },
+      {
+        "type": "text",
+        "key": "placeholder",
+        "label": "Placeholder",
+        "defaultValue": "Enter a tag..."
+      },
+      {
+        "type": "number",
+        "key": "maxTags",
+        "label": "Max Tags",
+        "defaultValue": 0,
+        "min": 0
+      },
+      {
+        "type": "boolean",
+        "key": "onlyUnique",
+        "label": "Only Unique",
+        "defaultValue": false
+      },
+      {
+        "type": "boolean",
+        "key": "allowBlur",
+        "label": "Allow Blur",
+        "defaultValue": false
+      },
+      {
+        "type": "boolean",
+        "key": "disabled",
+        "label": "Disabled",
+        "defaultValue": false
+      },
+      {
+        "type": "boolean",
+        "key": "readonly",
+        "label": "Read Only",
+        "defaultValue": false
+      },
+      {
+        "type": "section",
+        "section": true,
+        "name": "Autocomplete",
+        "settings": [
+          {
+            "type": "dataProvider",
+            "key": "acData",
+            "label": "Data Provider"
+          },
+          {
+            "type": "field",
+            "key": "acLabelField",
+            "label": "Label Field"
+          },
+          {
+            "type": "boolean",
+            "key": "forceAutocomplete",
+            "label": "Only Autocomplete",
+            "defaultValue": false
+          }
+        ]
+      }
+    ]
+  }
+}
